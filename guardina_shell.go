@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"net"
 
 	"github.com/avvvet/guardian-shell/internal/utils"
@@ -36,6 +37,8 @@ func main() {
 		if err != nil {
 			fmt.Println("Error executing command:", err)
 		}
+		// log the coming comman
+		log.Printf("$ %s", command)
 
 		//send command output to guardian listner
 		fmt.Fprint(conn, output)
