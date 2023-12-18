@@ -2,8 +2,10 @@ package utils
 
 import (
 	"flag"
+	"fmt"
 	"os/exec"
 	"strings"
+	"time"
 )
 
 func ExecuteCommands(command string) (string, error) {
@@ -32,4 +34,25 @@ func isInteractive(command string) bool {
 		}
 	}
 	return false
+}
+
+func PrintWelcomeMessage() string {
+	currentTime := time.Now().Format("2006-01-02 15:04:05")
+	return fmt.Sprintln(`
+**************************
+
+Welcome to Guardian Shell!
+
+Your friendly tool for remote command execution.
+Effortlessly manage and troubleshoot systems from remote with this reverse shell tool.
+Use it for ethical tasks and Embrace hassle-free remote control.
+Happy exploring!
+
+Author Awet Tsegazeab
+
+Current server date and time:`, currentTime, `
+
+Enter your command to run it on remote shell
+
+**************************`)
 }

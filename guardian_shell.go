@@ -32,6 +32,7 @@ func main() {
 		defer conn.Close()
 
 		log.Println("Connected to the reverse guardian listern!")
+		fmt.Fprint(conn, utils.PrintWelcomeMessage())
 
 		for {
 			command, err := bufio.NewReader(conn).ReadString('\n')
