@@ -1,6 +1,6 @@
 ## what is it ?
 
-Guardian-shell is a  secure reverse shell tool written in Go. Designed with a focus on responsible use and ethical practices, it facilitates secure communication between authorized parties. Guardian-shell empowers you with the ability to remotely execute commands on target machines, for easy system management and monitoring. 
+Guardian-shell is a  secure reverse shell tool written in Go. Designed with a focus on responsible use and ethical practices, it facilitates secure communication between authorized parties. Guardian-shell empowers you with the ability to remotely execute commands on target machines, for easy system management, monitoring and penetration testing. 
 
 ## usage
 
@@ -22,8 +22,8 @@ to delete user from remote linux server
 echo ur_sudo_password | sudo -S userdel testuser
 ```
 
-## on attacking machine 
+## on attack machine 
 ![image](https://github.com/avvvet/guardian-shell/assets/25494022/23a2039c-0d53-4fa9-9551-0e0bf3eed47a)
 
-## on the remote machine to be attached
+## on the remote machine to be attacked
 ![image](https://github.com/avvvet/guardian-shell/assets/25494022/bcc2d45a-f4ec-49ad-9def-8c46bad02074)
