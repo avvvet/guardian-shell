@@ -31,7 +31,7 @@ func main() {
 		}
 		defer conn.Close()
 
-		log.Println("Connected to the reverse guardian listern!")
+		log.Println("Connected to the reverse guardian listner!")
 		fmt.Fprint(conn, utils.PrintWelcomeMessage())
 
 		for {
