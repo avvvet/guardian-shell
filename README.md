@@ -21,6 +21,8 @@ to delete user from remote linux server
 ```
 echo ur_sudo_password | sudo -S userdel testuser
 ```
+## to do
+file transfer 
 
 ## on attack machine 
 ![image](https://github.com/avvvet/guardian-shell/assets/25494022/23a2039c-0d53-4fa9-9551-0e0bf3eed47a)
