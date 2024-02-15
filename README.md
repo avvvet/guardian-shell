@@ -5,6 +5,13 @@ Guardian-shell is a  secure reverse shell tool written in Go. Designed with a fo
 ## usage
 
 step 1 : from your (attacking) machine run `nc -lvp 20090`
+what is the above command ?
+    "-l": Tells netcat to operate in listening mode, waiting for incoming connections.
+    "-v": Enables verbose mode, providing more detailed output about the connections.
+    "-p": Specifies the port to listen on, in this case, port 2009.
+
+So, when you run this command, netcat will listen for incoming connections on port 2009 and display verbose output about the connections.
+In other words, with out the need for you to write http server, netcat (available in linux os) will give you the http server listner. 
 
 step 2 : run guardian-shell binary on the machine you want to attack. 
 copy from this repo the binary and paste it on the machine you want to attack and run it `./guardian-shell`
