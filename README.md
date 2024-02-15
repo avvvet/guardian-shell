@@ -12,6 +12,8 @@ on success, it will give you response `Connected to the reverse guardian listner
 
 ## sample commands
 
+After deploying this app, you can test it by running the following command to see how dangerous it is.
+
 to add new user in remote linux server
 ```
 echo ur_sudo_password | sudo -S useradd testuser; echo new_password_123 | passwd testuser
